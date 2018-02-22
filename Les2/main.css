@@ -1,0 +1,27 @@
+.flex {
+            display: flex;
+        }
+        
+        .zwart {
+            height: 2em;
+            width: 2em;
+            background-color: black;
+            border-width: 1px;
+            border-style: solid;
+        }
+        
+        .wit {
+            height: 2em;
+            width: 2em;
+            background-color: white;
+            border-width: 1px;
+            border-style: solid;
+        }
+        
+        .letter {
+            height: 2em;
+            width: 2em;
+            background-color: white;
+            color: black;
+            line-height: 1;
+        }

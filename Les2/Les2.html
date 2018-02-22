@@ -1,0 +1,45 @@
+<!DOCTYPE html >
+<html lang="nl">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+    
+	<meta charset="utf-8">
+	<meta name="description" content="beschrijving van de webpagina">
+	<meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
+	<meta name="viewport" content="width=device-width, height=device-height" />
+	<title>Schaakbord</title>
+</head>
+
+<body>
+    <p>number of rows:<input id='userInputRows' type="text" name="userInputRows"></p>
+    <p>number of columns:<input id='userInputColumns' type="text" name="userInputColumns"></p>
+    <button type="button" id='button' onclick="GenerateBoard()">GO!</button>
+	<script type="text/javascript">
+		'use strict';
+        
+        function GenerateBoard(){
+        var numberRows = parseInt.document.getElementById('userInputRows').value;
+        var numberColumns = parseInt.document.getElementById('userInputColumns').value;
+		for (var rij = 0; rij < numberColumns; rij++) {
+			document.write("<div class='flex'>")
+			if (rij % 2 == 0) {
+				for (var teller = 0; teller < numberRows/2; teller++) 
+                {
+					document.write("<div class='zwart'></div>");
+					document.write("<div class ='wit'></div>");
+				}
+			} else {
+				for (var teller = 0; teller < numberRows/2; teller++) 
+                {
+					document.write("<div class ='wit'></div>");
+					document.write("<div class='zwart'></div>");
+				}
+			}
+			document.write("</div>");
+		}
+        }
+	</script>
+</body>
+
+</html>
