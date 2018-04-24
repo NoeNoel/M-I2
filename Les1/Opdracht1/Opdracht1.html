@@ -1,0 +1,57 @@
+<!DOCTYPE html >
+
+<html lang="nl">
+
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <meta name="description" content="beschrijving van de webpagina">
+    <meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
+    <meta name="viewport" content="width=device-width, height=device-height" />
+    <title>Les1</title>
+</head>
+
+
+
+<body>
+    First number: <input type="text" id="a" name="a" value=""><br> 
+    Second number: <input type="text" id="b" name="b" value=""><br>
+    <button id="Plus" onclick="Optellen()">+</button>
+    <button id="Min" onclick="Aftrekken()">-</button>
+    <button id="Maal" onclick="Vermenigvuldigen()">*</button>
+    <button id="GedeeldDoor" onclick="Delen()">/</button>
+    <p id="uitkomst">0</p>
+    <script>
+        "use strict"
+
+        function Optellen() {
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("b").value)
+            document.getElementById("uitkomst").innerHTML = a + b;
+        }
+
+        function Aftrekken() {
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("b").value)
+            document.getElementById("uitkomst").innerHTML = a - b;
+        }
+
+        function Vermenigvuldigen() {
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("b").value)
+            document.getElementById("uitkomst").innerHTML = a * b;
+        }
+
+        function Delen() {
+           var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("b").value)
+            document.getElementById("uitkomst").innerHTML = a / b;
+        }
+    </script>
+</body>
+
+
+
+</html>
